@@ -32,13 +32,10 @@ public class DogApplication implements CommandLineRunner {
 		Dog dog3 = new Dog("Zispa","Sara","z named dog",true,2);
 		Dog dog4 = new Dog("Abracadabra","Sara","magical dog",true,4);
 
-
 		repository.save(dog1);
 		repository.save(dog2);
 		repository.save(dog3);
 		repository.save(dog4);
-
-
 
 		//3. RETRIEVE ALL
 		List<Dog> dogs = repository.findAll();
